@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 2</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/popupStyles.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="overlay"></div>
+      <!--dark blur pag nag open ng app :> -->
+
+      <div class="folder-container">
+        <nav>
+          <ul>
+            <li>
+              <!-- One for Popup Title, and one for Popup Image hehehez :> -->
+              <a href="#" onclick="openPopup('popup-profile')">
+                <img src="/img/MyProfile.png" alt="" />
+                <p>My Profile</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="openPopup('popup-about')">
+                <img src="/img/About.png" alt="" />
+                <p>About</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="openPopup('popup-project')">
+                <img src="/img/MyProjects.png" alt="" />
+                <p>My Projects</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" onclick="openPopup('popup-contact')">
+                <img src="/img/ContactMe.png" alt="" />
+                <p>Contact Me</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="widget-container">
+        <div class="banner-container">
+          <div class="text-container">
+            <p style="font-size: 20px">Hello World!</p>
+            <p style="font-size: 60px; font-weight: 600">
+              I’m Moses A. Armildez
+            </p>
+            <p style="line-height: 1.5; font-size: 20px">
+              A <span style="font-weight: bold">3rd year student </span>from
+              Bulacan State University studying Bachelor of Science in
+              Information Technology.
+            </p>
+          </div>
+          <div class="my-img-container">
+            <img src="/img/my-picture.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="power-off-container">
+          <img src="/img/power-off-img.png" alt="" />
+        </div>
+        <div class="time-container">
+          <p class="hour"></p>
+          <p class="minute"></p>
+        </div>
+      </footer>
+    </div>
+
+    <!--POPUPS-->
+    <div class="popup-profile" style="overflow-y: auto">
+      <div class="popup-header">
+        <div>
+          <img
+            src="/img/MyProfile.png"
+            alt=""
+            style="width: 60px"
+            class="popup-image"
+          />
+          <p class="popup-title">My Profile</p>
+        </div>
+        <div>
+          <button class="close-btn" onclick="closePopup('popup-profile')">
+            <img src="/img/close.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="popup-content"
+        style="display: flex; flex-direction: column; gap: 30px"
+      >
+        <img src="/img/myProfileContent1.png" alt="" style="width: 65%" />
+        <img src="/img/education.png" alt="" style="width: 35%" />
+      </div>
+    </div>
+
+    <div class="popup-about">
+      <div class="popup-header">
+        <div>
+          <img
+            src="/img/About.png"
+            alt=""
+            style="width: 60px"
+            class="popup-image"
+          />
+          <p class="popup-title">About</p>
+        </div>
+        <div>
+          <button class="close-btn" onclick="closePopup('popup-about')">
+            <img src="/img/close.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="popup-content"></div>
+    </div>
+
+    <div class="popup-project">
+      <div class="popup-header">
+        <div>
+          <img
+            src="/img/MyProjects.png"
+            alt=""
+            style="width: 60px"
+            class="popup-image"
+          />
+          <p class="popup-title">My Projects</p>
+        </div>
+        <div>
+          <button class="close-btn" onclick="closePopup('popup-project')">
+            <img src="/img/close.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="popup-content"></div>
+    </div>
+
+    <div class="popup-contact">
+      <div class="popup-header">
+        <div>
+          <img
+            src="/img/ContactMe.png"
+            alt=""
+            style="width: 60px"
+            class="popup-image"
+          />
+          <p class="popup-title">Contact Me</p>
+        </div>
+        <div>
+          <button class="close-btn" onclick="closePopup('popup-contact')">
+            <img src="/img/close.png" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="popup-content"></div>
+    </div>
+
+    <script>
+      function openPopup(className) {
+        document.querySelector(".overlay").style.display = "block";
+        document.querySelector(`.${className}`).style.display = "block";
+      }
+
+      function closePopup(className) {
+        document.querySelector(".overlay").style.display = "none";
+        document.querySelector(`.${className}`).style.display = "none";
+      }
+
+      function updateTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, "0");
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+
+        document.querySelector(".hour").innerHTML = `${hours}:`;
+        document.querySelector(".minute").innerHTML = minutes;
+      }
+
+      // Call updateTime every second
+      setInterval(updateTime, 1000);
+
+      // Initialize time on page load
+      updateTime();
+    </script>
+  </body>
+</html>
