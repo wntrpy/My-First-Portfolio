@@ -52,6 +52,7 @@ nav ul li a img{
   position: absolute;
   top: 20px;
   right: 40px;
+  
 }
 
 .banner-container{
@@ -62,6 +63,7 @@ nav ul li a img{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  border: 2px black solid;
 }
 
 .text-container{
@@ -76,6 +78,11 @@ nav ul li a img{
   border-radius: 20px;
   border: 5px black solid;
   border-style:double;
+  transition: transform 1s ease-in-out;
+}
+
+.banner-container img:hover{
+  transform: scale(1.1, 1.1);
 }
 
 
@@ -113,6 +120,15 @@ footer div img{
   font-weight: 600;
 }
 
-footer:hover{
-  height: 150px;
+
+.copyright-and-links{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+
 }

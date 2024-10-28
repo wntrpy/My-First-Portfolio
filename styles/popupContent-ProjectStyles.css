@@ -30,12 +30,21 @@
 
 .project-container .image-container img{
   width: 300px;
+  transition: all 1s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project-container .image-container img:hover{
+ /*increases the div two times the width, and three times of its height*/
+ transform: scale(2,2);
 }
 
 .project-description{
   text-align:start;
   margin-left: 85px;
   margin-top: 20px;
+  width: 75%;
 }
 
 .project-description p{
@@ -68,12 +77,21 @@
 
 .github-link-container{
   display: flex;
-  justify-content: flex-end;
+  margin-left: 92%;
+  margin-top: -50px;
+  width: 100px;
 }
 
 .github-link-container a{
   text-decoration: none;
   list-style-type: none;
+  transition: transform 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+.github-link-container a:hover{
+  transform: scale(1.2,1.2);
+
 }
 
 .github-link-container a img{
