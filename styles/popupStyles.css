@@ -30,7 +30,6 @@
   align-items: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-
 }
 
 .popup-header div{
@@ -73,4 +72,7 @@
   background-color: transparent;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
+

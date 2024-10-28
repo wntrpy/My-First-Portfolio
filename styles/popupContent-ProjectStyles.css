@@ -1,0 +1,81 @@
+/*POPUP MY PROJECT STYLES*/
+.popup-content-myProject{
+  height: 91%;
+  width: 100%;
+  background-color: transparent;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.project-container{
+  height: 80%;
+  width: 95%;
+  background-color: #d9d0f7;
+  border-radius: 20px;
+  border: 3px black solid;
+}
+
+.project-container .image-container{
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-container .image-container img{
+  width: 300px;
+}
+
+.project-description{
+  text-align:start;
+  margin-left: 85px;
+  margin-top: 20px;
+}
+
+.project-description p{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.tags-container{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.tags-container div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: #f1e1f1;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+.tags-container div:hover{
+  background-color: #d9d0f7;
+}
+
+.github-link-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.github-link-container a{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.github-link-container a img{
+  width: 90px;
+}
