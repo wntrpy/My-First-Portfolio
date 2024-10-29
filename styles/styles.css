@@ -12,6 +12,14 @@ body {
   background-size: cover;
 }
 
+:root{
+  --greenish: #afb1b9;
+  --lavender: #d9d0f7;
+  --dark-lavender: #a559ae;
+  --pinkish: #f1e1f1;
+  --not-so-dark-lavender: #a599ae;
+}
+
 
 .main-container{
   width: 100%;
@@ -52,7 +60,6 @@ nav ul li a img{
   position: absolute;
   top: 20px;
   right: 40px;
-  
 }
 
 .banner-container{
@@ -102,6 +109,11 @@ footer{
   position: absolute;
   left: 20px;
   top: 7px;
+  bottom: 0;
+  display: flex; /*para magdikit in rows yung links + power off :> */
+  gap: 35px;
+  align-items: center;
+
 }
 
 footer div img{
@@ -121,14 +133,26 @@ footer div img{
 }
 
 
-.copyright-and-links{
+.copyright{
   display: flex;
   justify-content: center;
   width: 40%;
   position: absolute;
   left: 30%;
-  bottom: 0;
+  bottom: 15px;
   font-size: 20px;
   font-weight: 600;
+}
 
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+footer nav ul li a img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }

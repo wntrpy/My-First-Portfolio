@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/popupStyles.css" />
     <link rel="stylesheet" href="/styles/popupContent-ProjectStyles.css">
+    <link rel="stylesheet" href="/styles/popupContent-Contact.css">
     <link rel="stylesheet" href="/styles/popupContent-MyProfileStyles.css">
   </head>
 
@@ -53,10 +54,10 @@
       <div class="widget-container">
         <div class="banner-container">
           <div class="text-container">
-            <p style="font-size: 20px">Hello World!</p>
-            <p style="font-size: 60px; font-weight: 600">
+            <p style="font-size: 20px;">Hello World!</p>
+            <h2 style="font-size: 60px; font-weight: 600">
               I’m Moses A. Armildez
-            </p>
+            </h2>
             <p style="line-height: 1.5; font-size: 20px">
               A <span style="font-weight: bold">3rd year student </span>from
               Bulacan State University studying Bachelor of Science in
@@ -67,16 +68,42 @@
             <img src="/img/my-picture.jpg" alt="" />
           </div>
         </div>
-
       </div>
 
       <footer>
         <div class="power-off-container">
-          <img src="/img/power-off-img.png" alt="" />
+          <div > 
+           
+            <img src="/img/power-off-img.png" alt=""/>
+          </div>
+         
+          <nav>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/saeromsssees?mibextid=ZbWKwL" target="_blank">
+                    <img src="/img/facebook-link-icon.png" alt="">
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.instagram.com/srmssees/" target="_blank">
+                  <img src="/img/instagram-link-icon.png" alt="Instagram">
+                </a>
+              </li>
+        
+              <li>
+                <a href="https://github.com/wntrpy" target="_blank">
+                  <img src="/img/github-link-icon.png" alt="GitHub">
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="copyright-and-links">
-          <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        
 
+
+        <div class="copyright">
+          <p>&copy; 2024 Your Name. All Rights Reserved.</p>
         </div>
         <div class="time-container">
           <p class="hour"></p>
@@ -268,7 +295,34 @@
         </div>
       </div>
 
-      <div class="popup-content"></div>
+      <div class="popup-content-contact">
+
+        <div class="myContact-container">
+          <h2>Moses A. Armildez</h2>
+         
+            <a href="tel:+09673282968">
+              <img src="/img/phone-icon.png" alt="Phone Icon">
+              <p>0967 328 2968</p>
+            </a>
+          
+          
+            <a href="mailto:@Marmildez03@gmail.com">
+              <img src="/img/email-icon.png" alt="Email Icon">
+              <p>@Marmildez03@gmail.com</p>
+            </a>
+        
+        </div>
+        
+        <form>
+          <div>
+            <input type="text" placeholder="Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+          </div>
+         <input type="email" placeholder="Email address" class="emailInput" required>
+         <textarea name="message" placeholder="Message me" rows="8" cols="40" required class="messageMeInput"></textarea>
+         <input type="submit" value="SUBMIT" class="contactBtn">
+        </form>
+      </div>
     </div>
 
     <script src="script.js"> </script>
