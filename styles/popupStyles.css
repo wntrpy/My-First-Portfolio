@@ -76,3 +76,23 @@
   flex-direction: column;
 }
 
+/*POPUP CONTENT ABOUT*/
+.popup-content-about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.popup-content-about p{
+  width: 600px;
+  display: block;
+  font-size: 25px;
+  line-height: 2;
+}
+
+.popup-content-about img{
+  width: 550px;
+  display: block;
+}
