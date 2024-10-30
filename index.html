@@ -7,9 +7,8 @@
     <link rel="icon" href="/img/hannipy.jpeg" type="image/x-icon" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/popupStyles.css" />
-    <link rel="stylesheet" href="/styles/popupContent-ProjectStyles.css">
-    <link rel="stylesheet" href="/styles/popupContent-Contact.css">
-    <link rel="stylesheet" href="/styles/popupContent-MyProfileStyles.css">
+    <link rel="stylesheet" href="/styles/popupContent-ProjectStyles.css" />
+    <link rel="stylesheet" href="/styles/popupContent-Contact.css" />
   </head>
 
   <body>
@@ -21,7 +20,7 @@
         <nav>
           <ul>
             <li>
-              <!-- One for Popup Title, and one for Popup Image hehehez :> -->
+              <!--Pasa yung className ng popup na mag oopen :> -->
               <a href="#" onclick="openPopup('popup-profile')">
                 <img src="/img/MyProfile.png" alt="" />
                 <p>My Profile</p>
@@ -55,14 +54,17 @@
       <div class="widget-container">
         <div class="banner-container">
           <div class="text-container">
-            <p style="font-size: 20px;">Hello World!</p>
+            <p style="font-size: 20px">Hello World!</p>
             <h2 style="font-size: 60px; font-weight: 600">
               I’m Moses A. Armildez
             </h2>
             <p style="line-height: 1.5; font-size: 20px">
               A <span style="font-weight: bold">3rd year student </span>from
-              <span style="font-weight:600"> Bulacan State University</span> studying 
-              <span style="font-weight:600">Bachelor of Science in Information Technology</span>.
+              <span style="font-weight: 600"> Bulacan State University</span>
+              studying
+              <span style="font-weight: 600"
+                >Bachelor of Science in Information Technology</span
+              >.
             </p>
           </div>
           <div class="my-img-container">
@@ -72,43 +74,43 @@
       </div>
 
       <footer>
-        <div class="power-off-container">
-          <div > 
-           
-            <img src="/img/power-off-img.png" alt=""/>
+        <div class="footer-left-image-container">
+          <div>
+            <img src="/img/power-off-img.png" alt="" />
           </div>
-         
+
           <nav>
             <ul>
               <li>
-                <a href="https://www.facebook.com/saeromsssees?mibextid=ZbWKwL" target="_blank">
-                    <img src="/img/facebook-link-icon.png" alt="">
+                <a
+                  href="https://www.facebook.com/saeromsssees?mibextid=ZbWKwL"
+                  target="_blank"
+                >
+                  <img src="/img/facebook-link-icon.png" alt="" />
                 </a>
               </li>
-              
+
               <li>
                 <a href="https://www.instagram.com/srmssees/" target="_blank">
-                  <img src="/img/instagram-link-icon.png" alt="Instagram">
+                  <img src="/img/instagram-link-icon.png" alt="Instagram" />
                 </a>
               </li>
-        
+
               <li>
                 <a href="https://github.com/wntrpy" target="_blank">
-                  <img src="/img/github-link-icon.png" alt="GitHub">
+                  <img src="/img/github-link-icon.png" alt="GitHub" />
                 </a>
               </li>
             </ul>
           </nav>
         </div>
-        
-
 
         <div class="copyright">
           <p>&copy; 2024 Moses A. Armildez. All Rights Reserved.</p>
         </div>
-        <div class="time-container">
-          <p class="hour"></p>
-          <p class="minute"></p>
+
+        <div class="footer-right-image-container">
+          <img src="/img/wifiSoundBattery.png" alt="" />
         </div>
       </footer>
     </div>
@@ -132,7 +134,7 @@
         </div>
       </div>
 
-      <div class="popup-content-myProfile" >
+      <div class="popup-content-myProfile">
         <img src="/img/myProfileContent1.png" alt="" style="width: 65%" />
         <img src="/img/education.png" alt="" style="width: 35%" />
       </div>
@@ -159,10 +161,12 @@
       <div class="popup-content-about">
         <p>
           This portfolio was created as part of my midterm examination for my
-          <span style="font-weight: 600;"> Web System and Technology</span>
-        subject. The goal was to showcase our development and design skills in a practical, real-world application, and to also apply what we’ve learned so for on this subject.
+          <span style="font-weight: 600"> Web System and Technology</span>
+          subject. The goal was to showcase our development and design skills in
+          a practical, real-world application, and to also apply what we’ve
+          learned so for on this subject.
         </p>
-        <img src="/img/aboutPic.png" alt="">
+        <img src="/img/aboutPic.png" alt="" />
       </div>
     </div>
 
@@ -185,6 +189,7 @@
       </div>
 
       <div class="popup-content-myProject">
+        <!--PROJECT 1-->
         <div class="project-container">
           <div class="image-container">
             <img src="/img/nxt1.png" alt="" />
@@ -209,14 +214,15 @@
           </div>
         </div>
 
+        <!--PROJECT 2-->
         <div class="project-container">
           <div class="image-container">
-            <img src="/img/series1.png" alt="" style="width: 450px;"/>
-            <img src="/img/series2.png" alt="" style="width: 450px;" />
+            <img src="/img/series1.png" alt="" style="width: 450px" />
+            <img src="/img/series2.png" alt="" style="width: 450px" />
           </div>
 
           <div class="project-description">
-            <p>Watchlist Tracker for personal use :></p>
+            <p>Watchlist Tracker</p>
             <div class="tags-container">
               <div>Java</div>
               <div>JavaFX</div>
@@ -226,17 +232,23 @@
           </div>
 
           <div class="github-link-container" style="">
-            <a href="https://github.com/wntrpy/POS" target="_blank">
+            <a
+              href="https://github.com/wntrpy/Watchlist-Tracker"
+              target="_blank"
+            >
               <img src="/img/github-logo.png" alt="" />
             </a>
           </div>
         </div>
 
-
+        <!--PROJECT 3-->
         <div class="project-container">
           <div class="image-container">
-            <video width="450px" controls style="border-radius: 10px;">
-              <source src="/video/ytClone - Made with Clipchamp.mp4" type="video/mp4" />
+            <video width="450px" controls style="border-radius: 10px">
+              <source
+                src="/video/ytClone - Made with Clipchamp.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
 
@@ -249,38 +261,15 @@
           </div>
 
           <div class="github-link-container">
-            <a href="https://github.com/wntrpy/POS" target="_blank">
-              <img src="/img/github-logo.png" alt="" />
-            </a>
-          </div>
-        </div>
-
-
-        <div class="project-container">
-          <div class="image-container">
-            <img src="/img/nxt1.png" alt="" />
-            <img src="/img/nxt2.png" alt="" style="width: 375px" />
-            <img src="/img/nxt3.png" alt="" style="width: 375px" />
-          </div>
-
-          <div class="project-description">
-            <p>Inventory and POS System for NXT Vape Lounge</p>
-            <div class="tags-container">
-              <div>Java</div>
-              <div>JavaFX</div>
-              <div>MSSQL</div>
-              <div>CSS</div>
-            </div>
-          </div>
-
-          <div class="github-link-container">
-            <a href="https://github.com/wntrpy/POS" target="_blank">
+            <a
+              href="https://github.com/wntrpy/Youtube-Clone-UI-"
+              target="_blank"
+            >
               <img src="/img/github-logo.png" alt="" />
             </a>
           </div>
         </div>
       </div>
-    </div>
     </div>
 
     <div class="popup-contact">
@@ -302,35 +291,43 @@
       </div>
 
       <div class="popup-content-contact">
-
         <div class="myContact-container">
           <h2>Moses A. Armildez</h2>
-         
-            <a href="tel:+09673282968">
-              <img src="/img/phone-icon.png" alt="Phone Icon">
-              <p>0967 328 2968</p>
-            </a>
-          
-          
-            <a href="mailto:@Marmildez03@gmail.com">
-              <img src="/img/email-icon.png" alt="Email Icon">
-              <p>@Marmildez03@gmail.com</p>
-            </a>
-        
+
+          <a href="tel:+639673282968">
+            <img src="/img/phone-icon.png" alt="Phone Icon" />
+            <p>0967 328 2968</p>
+          </a>
+
+          <a href="mailto:@Marmildez03@gmail.com">
+            <img src="/img/email-icon.png" alt="Email Icon" />
+            <p>@Marmildez03@gmail.com</p>
+          </a>
         </div>
-        
+
         <form>
           <div>
-            <input type="text" placeholder="Name" required>
-            <input type="tel" placeholder="Phone Number" required>
+            <input type="text" placeholder="Name" required />
+            <input type="tel" placeholder="Phone Number" required />
           </div>
-         <input type="email" placeholder="Email address" class="emailInput" required>
-         <textarea name="message" placeholder="Message me" rows="8" cols="40" required class="messageMeInput"></textarea>
-         <input type="submit" value="SUBMIT" class="contactBtn">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="emailInput"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Message me"
+            rows="8"
+            cols="40"
+            class="messageMeInput"
+          ></textarea>
+          <input type="submit" value="SUBMIT" class="contactBtn" />
         </form>
       </div>
     </div>
 
-    <script src="script.js"> </script>
+    <script src="script.js"></script>
   </body>
 </html>

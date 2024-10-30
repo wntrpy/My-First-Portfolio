@@ -4,7 +4,7 @@
   background-color: transparent;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  display: flex; /*para magdikit si div saka si form in ROW*/
+  display: flex; 
   justify-content: space-evenly;
 }
 
@@ -36,7 +36,6 @@
   font-size: 40px;
 }
 
-
 .myContact-container a img{
   width: 45px;
 }
@@ -47,7 +46,7 @@ form{
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: #d9d0f7;
+  background-color: var(--lavender);
   height: 80%;
   width: 550px;
   border: 3px black solid;
@@ -93,14 +92,12 @@ form div input{
   width: 475px;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   padding: 12px 10px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  background: transparent;
+  border-radius: 5px;
   outline: none;
   transition: all 0.5s ease-in-out;
 }

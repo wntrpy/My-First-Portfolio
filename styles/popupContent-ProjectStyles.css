@@ -1,6 +1,5 @@
 /*POPUP MY PROJECT STYLES*/
 .popup-content-myProject{
-  height: 91%;
   width: 100%;
   background-color: transparent;
   border-bottom-right-radius: 20px;
@@ -10,12 +9,13 @@
   align-items: center;
   margin-top: 20px;
   gap: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .project-container{
-  height: 80%;
   width: 95%;
-  background-color: #d9d0f7;
+  background-color: var(--lavender);
   border-radius: 20px;
   border: 3px black solid;
 }
@@ -36,27 +36,27 @@
 }
 
 .project-container .image-container img:hover{
- /*increases the div two times the width, and three times of its height*/
  transform: scale(2,2);
 }
 
 .project-description{
   text-align:start;
   margin-left: 85px;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 75%;
 }
 
 .project-description p{
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 25px;
 }
 
 .tags-container{
-  margin-top: 10px;
   display: flex;
   align-items: center;
   gap: 30px;
+  margin-bottom: 20px;
 }
 
 .tags-container div{
@@ -66,20 +66,20 @@
   border-radius: 20px;
   width: 100px;
   height: 40px;
-  background-color: #f1e1f1;
+  background-color: var(--pinkish);
   cursor: pointer;
   transition: 0.5s all ease-in-out;
 }
 
 .tags-container div:hover{
-  background-color: #d9d0f7;
+  background-color: var(--lavender);
 }
 
 .github-link-container{
   display: flex;
   margin-left: 92%;
-  margin-top: -50px;
   width: 100px;
+  margin-top: -80px;
 }
 
 .github-link-container a{
@@ -91,7 +91,6 @@
 
 .github-link-container a:hover{
   transform: scale(1.2,1.2);
-
 }
 
 .github-link-container a img{
