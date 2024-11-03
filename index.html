@@ -28,13 +28,6 @@
             </li>
 
             <li>
-              <a href="#" onclick="openPopup('popup-about')">
-                <img src="/img/About.png" alt="" />
-                <p>About</p>
-              </a>
-            </li>
-
-            <li>
               <a href="#" onclick="openPopup('popup-project')">
                 <img src="/img/MyProjects.png" alt="" />
                 <p>My Projects</p>
@@ -78,7 +71,6 @@
           <div>
             <img src="/img/power-off-img.png" alt="" />
           </div>
-
           <nav>
             <ul>
               <li>
@@ -105,12 +97,13 @@
           </nav>
         </div>
 
-        <div class="copyright">
-          <p>&copy; 2024 Moses A. Armildez. All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-right-image-container">
+        <div class="footer-right-container">
           <img src="/img/wifiSoundBattery.png" alt="" />
+
+          <div class="time-container">
+            <p class="hour"></p>
+            <p class="minute"></p>
+          </div>
         </div>
       </footer>
     </div>
@@ -137,36 +130,6 @@
       <div class="popup-content-myProfile">
         <img src="/img/myProfileContent1.png" alt="" style="width: 65%" />
         <img src="/img/education.png" alt="" style="width: 35%" />
-      </div>
-    </div>
-
-    <div class="popup-about">
-      <div class="popup-header">
-        <div>
-          <img
-            src="/img/About.png"
-            alt=""
-            style="width: 60px"
-            class="popup-image"
-          />
-          <p class="popup-title">About</p>
-        </div>
-        <div>
-          <button class="close-btn" onclick="closePopup('popup-about')">
-            <img src="/img/close.png" alt="" />
-          </button>
-        </div>
-      </div>
-
-      <div class="popup-content-about">
-        <p>
-          This portfolio was created as part of my midterm examination for my
-          <span style="font-weight: 600"> Web System and Technology</span>
-          subject. The goal was to showcase our development and design skills in
-          a practical, real-world application, and to also apply what we’ve
-          learned so for on this subject.
-        </p>
-        <img src="/img/aboutPic.png" alt="" />
       </div>
     </div>
 
