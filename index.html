@@ -12,6 +12,17 @@
   </head>
 
   <body>
+    <script>
+      // Display the viewport width and height
+      alert(
+        "Width: " +
+          window.innerWidth +
+          "px\nHeight: " +
+          window.innerHeight +
+          "px"
+      );
+    </script>
+
     <div class="main-container">
       <div class="overlay"></div>
       <!--dark blur pag nag open ng popup :> -->
@@ -21,21 +32,21 @@
           <ul>
             <li>
               <!--Pasa yung className ng popup na mag oopen :> -->
-              <a href="#" onclick="openPopup('popup-profile')">
+              <a href="#" ondblclick="openPopup('popup-profile', 'MyProfile')">
                 <img src="/img/MyProfile.png" alt="" />
                 <p>My Profile</p>
               </a>
             </li>
 
             <li>
-              <a href="#" onclick="openPopup('popup-project')">
+              <a href="#" ondblclick="openPopup('popup-project', 'MyProjects')">
                 <img src="/img/MyProjects.png" alt="" />
                 <p>My Projects</p>
               </a>
             </li>
 
             <li>
-              <a href="#" onclick="openPopup('popup-contact')">
+              <a href="#" ondblclick="openPopup('popup-contact', 'ContactMe')">
                 <img src="/img/ContactMe.png" alt="" />
                 <p>Contact Me</p>
               </a>
@@ -47,11 +58,9 @@
       <div class="widget-container">
         <div class="banner-container">
           <div class="text-container">
-            <p style="font-size: 20px">Hello World!</p>
-            <h2 style="font-size: 60px; font-weight: 600">
-              I’m Moses A. Armildez
-            </h2>
-            <p style="line-height: 1.5; font-size: 20px">
+            <p>Hello World!</p>
+            <h2>I’m Moses A. Armildez</h2>
+            <p>
               A <span style="font-weight: bold">3rd year student </span>from
               <span style="font-weight: 600"> Bulacan State University</span>
               studying
@@ -95,6 +104,9 @@
               </li>
             </ul>
           </nav>
+          <div class="opened-folder-container">
+            <img src="" alt="" style="width: 50px" />
+          </div>
         </div>
 
         <div class="footer-right-container">

@@ -1,12 +1,16 @@
-function openPopup(className) {
+function openPopup(className, imageName) {
   document.querySelector(".overlay").style.display = "block";
   document.querySelector(`.${className}`).style.display = "block";
+  document.querySelector('.opened-folder-container img').src = `/img/${imageName}.png`;
 }
 
 function closePopup(className) {
   document.querySelector(".overlay").style.display = "none";
   document.querySelector(`.${className}`).style.display = "none";
+  document.querySelector('.opened-folder-container img').src = ``;
 }
+
+
 
 
 
